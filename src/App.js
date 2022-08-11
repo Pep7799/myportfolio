@@ -1,6 +1,5 @@
 import AboutMe from "./pages/AboutMe";  //page one(About Me )
 import GlobalStyle from "../src/components/GlobalStyle";
-import Navbar from './components/Navbar';
 import MyProjects from "./pages/MyProjects";
 import ContactMe from "./pages/ContactMe";
 import {Routes, Route, useLocation } from 'react-router-dom';

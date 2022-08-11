@@ -4,8 +4,9 @@ import { Buttons } from '../Styles'
 import weatherdes from '../images/weatherdes.png'
 import ml from '../images/ml.png'
 import quizl from '../images/quizl.png'
-import { pageAnimation, aboutAnim, picAnim, slideAnim  } from '../animation'
+import { aboutAnim, picAnim, slideAnim  } from '../animation'
 import {motion} from 'framer-motion'
+import ecommerce from '../images/ecommerce.png'
 
 
 const Projects = () => {
@@ -14,6 +15,27 @@ const Projects = () => {
       <Frame1 variants ={slideAnim}></Frame1>
       <Frame2 variants ={slideAnim}></Frame2>
 
+
+      <Container>
+          <motion.h2 variants = {aboutAnim} >Ecommmerce App</motion.h2>
+          <motion.p variants={aboutAnim}>A perfume ecommerce app with React and CSS</motion.p>
+          <motion.div variants={picAnim} className='line'></motion.div>
+          <IMG >
+          <Hide>
+          <motion.img variants = {picAnim} src={ecommerce} width = "100%" alt="" />
+          </Hide>
+          </IMG>
+         
+
+          <Buttons2>
+            <button>
+            <a href="" target= "_blank">Github link</a>
+            </button>
+            <button>
+            <a href="https://ecommercep.vercel.app/" target= "_blank">Preview</a>
+            </button>
+          </Buttons2>
+        </Container>
 
         <Container>
           <motion.h2 variants = {aboutAnim} >Weather APP</motion.h2>

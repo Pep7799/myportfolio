@@ -2,7 +2,6 @@ import React from 'react'
 import picone from '../images/picone.jpg';     //my picture
 import {About1, Name2, Intro, Image1, Buttons} from '../Styles'
 import {motion} from "framer-motion"
-import styled from 'styled-components' 
 import { aboutAnim, btnAnim, picAnim } from '../animation';
 
 
