@@ -7,13 +7,17 @@ import styled from 'styled-components'
 import {About1} from '../Styles'
 import {Card} from '../Styles'
 import {Connect, Image1} from '../Styles'
+import { scrollAnim } from '../animation'
+import useScroll from './useScroll'
+import ScrollTop from './ScrollTop'
 
 
 const AboutSection2 = () => {
+  const [element, controls] = useScroll()
   return (
-    <About2>
+    <About2 >
         <Image1>
-          <img src={pictwo} width = "640" height="600" alt="guy on laptop" />
+          <img src={pictwo} className= 'imglap' width = "640" height="600" alt="guy on laptop" />
         </Image1>
 
         <div>
@@ -27,7 +31,7 @@ const AboutSection2 = () => {
                 </div>
                 <p>a thinker who focuses on the problem as stated and tries to synthesize information and knowledge to achieve a solution</p>
                </Card>
-          
+            
                <Card>
                 <div className='icon'>
                   <img src={icon2} alt="" />
@@ -48,6 +52,7 @@ const AboutSection2 = () => {
               </All>
         </Connect>
         </div>
+        <ScrollTop/>
         
     </About2>
   )
@@ -60,6 +65,7 @@ const About2 = styled(About1)`
   justify-content: space-between;
   margin-right:90px;
   height: 130vh ;
+  width: 90vh;
 
   .image{
     margin-left: 40px;
@@ -71,6 +77,8 @@ const About2 = styled(About1)`
     background-blend-mode: multiply ;
 
   }
+ 
+
 
 `
 
@@ -79,8 +87,7 @@ const Para = styled.p`
     font-size: 24px;
     font-weight: bold;
     margin-top:70px;
-    margin-bottom:10px
-
+    margin-bottom:10px;
 
   
 `
@@ -89,6 +96,8 @@ const Para = styled.p`
 const All = styled.div `
     display: flex ;
     flex-wrap: wrap;
+   
+
 
 ` 
 

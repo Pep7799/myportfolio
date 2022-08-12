@@ -16,6 +16,7 @@ const AboutMe = () => {
         <AboutSection1 />
         <AboutSection2 />
         <TechnicalSkills/>
+        
     </motion.div>
     </div>
   )

@@ -65,3 +65,19 @@ export const slideAnim = {
     transition: { ease: "easeOut", duration: 0.5 },
   },
 }
+
+export const scrollAnim = {
+    hidden: { opacity: 0.5, 
+        scale: 1.1,
+        transition: {
+            duration: 1,
+          } },
+    show: {
+      opacity: 1,
+      scale:1,
+     
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };

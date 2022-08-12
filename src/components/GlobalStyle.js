@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         background: #9BD8F3;
         font-family: 'Edu VIC WA NT Beginner', cursive;
+        overflow-x: hidden;
     }
 
     

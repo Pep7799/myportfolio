@@ -9,7 +9,7 @@ const ContactMe = () => {
   return (
     <div>
         <Navbar/>
-        <motion.div style={{background: '#fff'}} variants={pageAnimation} initial = "hidden" animate = "show" exit= 'exit'>
+        <motion.div variants={pageAnimation} initial = "hidden" animate = "show" exit= 'exit'>
         <Contacts/> 
         </motion.div>     
         

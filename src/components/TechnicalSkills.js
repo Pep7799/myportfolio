@@ -9,12 +9,16 @@ import {Card} from '../Styles'
 import { Connect } from '../Styles'
 import Toggle from './Toggle'
 import { AnimateSharedLayout } from 'framer-motion'
+import useScroll from './useScroll'
+import { scrollAnim } from '../animation'
+import ScrollTop from './ScrollTop'
 
 
 const TechnicalSkills = () => {
+  const [element, controls] = useScroll()
   
   return (
-    <Connect2>
+    <Connect2 variants = {scrollAnim} animate = {controls} initial ='hidden' ref = {element}>
     <div>
       <h1> Technical Skills</h1>
       <p>I'm passionate 
@@ -94,12 +98,14 @@ const TechnicalSkills = () => {
      </AnimateSharedLayout>
           
    </div>
+   <ScrollTop/>
     </Connect2>
   )
 }
 
 const Connect2 = styled(Connect)`
   margin-left: 20px;
+  min-height: 25px;
 
   h1 {
     font-size: 24px;

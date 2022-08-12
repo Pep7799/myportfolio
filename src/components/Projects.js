@@ -7,9 +7,16 @@ import quizl from '../images/quizl.png'
 import { aboutAnim, picAnim, slideAnim  } from '../animation'
 import {motion} from 'framer-motion'
 import ecommerce from '../images/ecommerce.png'
+import useScroll from './useScroll'
+import { scrollAnim } from '../animation'
+import ScrollTop from './ScrollTop'
+
 
 
 const Projects = () => {
+  const [element, controls] = useScroll()
+  const [element2, controls2] = useScroll()
+  const [element3, controls3] = useScroll()
   return (
     <div>
       <Frame1 variants ={slideAnim}></Frame1>
@@ -37,13 +44,13 @@ const Projects = () => {
           </Buttons2>
         </Container>
 
-        <Container>
-          <motion.h2 variants = {aboutAnim} >Weather APP</motion.h2>
-          <motion.p variants={aboutAnim}>A weather app created with React, weather API and Tailwind CSS for styling</motion.p>
+        <Container variants = {scrollAnim} animate = {controls} initial = 'hidden' ref = {element}>
+          <h2>Weather APP</h2>
+          <p variants={aboutAnim}>A weather app created with React, weather API and Tailwind CSS for styling</p>
           <motion.div variants={picAnim} className='line'></motion.div>
           <IMG >
           <Hide>
-          <motion.img variants = {picAnim} src={weatherdes} width = "100%" alt="" />
+          <img src={weatherdes} width = "100%" alt="" />
           </Hide>
           </IMG>
          
@@ -59,10 +66,10 @@ const Projects = () => {
         </Container>
 
 
-        <Container>
+        <Container variants = {scrollAnim} animate = {controls2} initial = 'hidden' ref = {element2}>
           <h2>Beats loaded</h2>
           <p>A music app created with React, SCSS, </p>
-          <div className='line'></div>
+          <motion.div className='line'></motion.div>
           <IMG >
           <img src={ml} width = "100%" alt="" />
           </IMG>
@@ -78,10 +85,10 @@ const Projects = () => {
         </Container>
 
 
-        <Container>
+        <Container variants = {scrollAnim} animate = {controls3} initial = 'hidden' ref = {element3}>
           <h2>Quiz APP</h2>
           <p>A collaborated quiz app created with React, React Router and Tailwind CSS for styling</p>
-          <div className='line'></div>
+          <motion.div className='line'></motion.div>
           <IMG >
           <img src={quizl} width = "100%" alt="" />
           </IMG>
@@ -95,6 +102,7 @@ const Projects = () => {
             </button>
           </Buttons2>
         </Container>
+        <ScrollTop/>
 
 
     </div>
@@ -102,7 +110,7 @@ const Projects = () => {
 }
 
 
- const Container = styled.div`
+ const Container = styled(motion.div)`
  margin-bottom: 170px;
  h2 {
   font-size: 20px ;

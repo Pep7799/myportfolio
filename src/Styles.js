@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 
 
 export const About1 = styled(motion.section) `
-  height: 85vh;
+  min-height: 90vh;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -15,13 +15,30 @@ export const About1 = styled(motion.section) `
   padding-left: 30px ;
   overflow: hidden;
   margin-bottom: 20px;
+  margin-top: 20px;
 
   h1 {
+    
     font-size: 40px;
     color: black;
     width: 280px ;
-    height: 25vh ;
+    height: 18vh ;
   }
+
+  @media(max-width: 700px) {
+    min-height: 105vh;
+    display: block;    
+    width: 70vh;
+    h1 {
+    
+    text-align: center;
+    width: 100%;
+  }
+    
+      
+  }
+
+ 
 `
 
 export const Name2  = styled.span `
@@ -33,6 +50,14 @@ export const Intro = styled(motion.div) `
   font-weight: 800;
   letter-spacing: 2px ;
   font-size: 20px ;
+
+  @media(max-width: 700px) {
+    font-size: 16px ;
+    width: 100%;
+    text-align: center;
+  }
+
+ 
 
 `
 
@@ -46,10 +71,20 @@ export const Image1 = styled.section `
   width : 100%;
   height: 80vh;
   }
+  @media(max-width: 700px) {
+    img {
+      background:#9BD8F3;
+      width : 60vh;
+      height: 60vh;
+      
+  }
+}
+
 ` 
 
 export const Card = styled.div`
     flex-basis: 10rem ;
+    margin-left: 0px;
     .icon {
       display: flex ;
       align-items: center ;
@@ -60,7 +95,7 @@ export const Card = styled.div`
       margin-left: 10px;
       box-shadow: 3px 5px 8px #888888;
       padding: 10px 10px;
-      font-size: 15px;
+      font-size: 18px;
 
     }
 
@@ -68,22 +103,35 @@ export const Card = styled.div`
       margin-top: 5px;
       padding-left: 60px;
       width: 400px ;
-      font-size: 14px;
+      font-size: 17px;
       margin-bottom: 30px ;
     }
+ 
+
+    
 
 ` 
 
 
-export const Connect = styled.div `
+export const Connect = styled(motion.div) `
   margin-left: 100px;
+  @media(max-width: 700px) {
+      align-items: center;
+      min-height: 100vh;
+      width: 100vh;
+     
+    }
 
 
-img {
-      width: 60px ;
+  img {
+        width: 60px ;
       height: 80px ;
       background-blend-mode: multiply ;
     }
+
+   
+
+    
 `
 
 export const Buttons = styled(motion.div) `
@@ -97,6 +145,7 @@ export const Buttons = styled(motion.div) `
     font-weight: bold;
     text-decoration: none;
 
+   
 
   &:hover {
       color: black;
@@ -104,4 +153,11 @@ export const Buttons = styled(motion.div) `
 
   }
 }
+
+      @media(max-width: 700px) {
+            text-align: center;
+          }
+
+  
+
   `
