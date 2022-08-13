@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         background: #9BD8F3;
         font-family: 'Raleway', sans-serif;        
-        overflow-x: hidden;
+        
     }
 
     @media(max-width: 452px) {

@@ -18,7 +18,7 @@ const TechnicalSkills = () => {
   const [element, controls] = useScroll()
   
   return (
-    <Connect2 variants = {scrollAnim} animate = {controls} initial ='hidden' ref = {element}>
+    <Connect2 >
     <div>
       <h1> Technical Skills</h1>
       <p>I'm passionate 
@@ -120,7 +120,9 @@ const Connect2 = styled(Connect)`
       background-blend-mode: multiply ;
     }
 
-
+@media(max-width: 452px) {
+  margin-left: 40px;
+}
 `
 const Card2 = styled(Card)`
   h3 {

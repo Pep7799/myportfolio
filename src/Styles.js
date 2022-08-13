@@ -156,7 +156,7 @@ export const Connect = styled(motion.div) `
         
          min-height: 50vh;
          width: 100vh;
-         margin-left: 50px;
+         margin-left: 10px;
         
 
          img {
