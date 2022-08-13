@@ -3,8 +3,12 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import {FaTimesCircle} from 'react-icons/fa'
 import {CgMenuGridR} from 'react-icons/cg'
+import { motion } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+
+    const {pathname} = useLocation();
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -24,14 +28,26 @@ const Navbar = () => {
         
             <li className='each-item'>
             <Link to = "/" onClick={closeMenu}>About Me</Link>
+            <Line 
+            transition = {{duration: 0.75}} 
+            initial = {{width: "0%"}} 
+            animate = {{width: pathname === '/' ? '50%': '0%'}}/>
             </li>
 
             <li className='each-item'>
             <Link to = "/projects" onClick={closeMenu}>My Projects</Link>
+            <Line 
+            transition = {{duration: 0.75}} 
+            initial = {{width: "0%"}} 
+            animate = {{width: pathname === '/projects' ? '50%': '0%'}}/>
             </li>
 
             <li className='each-item'>
             <Link to = "/contact" onClick={closeMenu}>Contact Me</Link>
+            <Line 
+            transition = {{duration: 0.75}} 
+            initial = {{width: "0%"}} 
+            animate = {{width: pathname === '/contact' ? '50%': '0%'}}/>
             </li>
         
         </ul>    
@@ -71,6 +87,13 @@ const Nav = styled.nav `
         display: none;
     }
 
+    a:hover {
+        color: #9BD8F3;
+        padding-bottom: 12px;
+        
+        
+     }
+    
     ul {
         list-style: none ;
         display: flex;
@@ -128,9 +151,8 @@ const Nav = styled.nav `
                 left: 0;
                 
             }
-            .nav-menu .active {
-                color: white;
-            }
+          
+
             .nav-menu:hover {
                 cursor: pointer;
             }
@@ -152,7 +174,20 @@ const Nav = styled.nav `
             }   
 
 
-        }        
+        }  
+        
+      
+`
+const Line = styled(motion.div) `
+    height: 0.2rem;
+    background: #9BD8F3;
+    position:absolute;
+    width: 0%;
+    border-bottom: 3px solid #9BD8F3;
+    left: 40%;
+    margin-bottom:12px;
+    
+
 `
 
 export default Navbar

@@ -54,6 +54,7 @@ const Contacts = () => {
 const ContactContainer = styled(motion.div)`
   padding: 1rem ;
   background: #fff;
+  height: 90vh;
   
 
 
@@ -171,6 +172,25 @@ const ContactContainer = styled(motion.div)`
   opacity: 1;
 }
 
+@media(max-width: 452px) {
+  .contacticons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    
+  }
+
+  .emailtext{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 250%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
 
 `
 

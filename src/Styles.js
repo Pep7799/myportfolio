@@ -98,6 +98,8 @@ export const Image1 = styled.section `
       background:#9BD8F3;
       width : 30vh;
       height: 30vh;
+      text-align:center;
+      margin-left: 20px;
       
   }
 }
@@ -155,8 +157,8 @@ export const Connect = styled(motion.div) `
     @media(max-width: 452px) {
         
          min-height: 50vh;
-         width: 100vh;
-         margin-left: 10px;
+         width: 150vh;
+         margin-left: 3px;
         
 
          img {
