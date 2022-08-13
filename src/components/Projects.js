@@ -137,8 +137,7 @@ const IMG = styled.div `
     width: 100vw;
     max-width: 100%;
     
-    object-fit: cover;
-    
+    object-fit: cover;    
   }
 `
 
