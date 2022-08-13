@@ -16,9 +16,9 @@ const AboutSection2 = () => {
   const [element, controls] = useScroll()
   return (
     <About2 >
-        <Image1>
+        <Image2>
           <img src={pictwo} className= 'imglap' width = "640" height="600" alt="guy on laptop" />
-        </Image1>
+        </Image2>
 
         <div>
         <Connect>
@@ -67,10 +67,17 @@ const About2 = styled(About1)`
   height: 130vh ;
   width: 90vh;
 
-  .image{
-    margin-left: 40px;
+ 
+
+  @media(max-width: 452px){
+    height: 100vh ;
+
+    .imglap {
+    opacity: 0;
+  }
   }
 
+ 
   img {
     object-fit: contain;
     margin-right:2px;
@@ -97,9 +104,40 @@ const All = styled.div `
     display: flex ;
     flex-wrap: wrap;
    
-
+  @media(max-width: 452px){
+    width: 50%;
+  }
 
 ` 
+
+const Image2 = styled(Image1)`
+   margin-bottom: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+
+  img {
+  background:#9BD8F3;
+  width : 100%;
+  height: 80vh;
+  opacity: 1;
+  }
+  @media(max-width: 700px) {
+    img {
+      background:#9BD8F3;
+      width : 60vh;
+      height: 0vh;
+    }
+  }
+  @media(max-width: 452px) {
+    img {
+      background:none;
+      width : 60vh;
+      height: 0vh;
+      opacity:0;
+    }
+  }
+
+`
 
 
 

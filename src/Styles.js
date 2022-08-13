@@ -34,8 +34,19 @@ export const About1 = styled(motion.section) `
     text-align: center;
     width: 100%;
   }
-    
+
+  
       
+  }
+
+  @media screen and (max-width:452px) {
+    min-height:30vh;
+    width: 30vh;
+  }
+  h1 {
+    
+    text-align: center;
+    width: 100%;
   }
 
  
@@ -80,6 +91,15 @@ export const Image1 = styled.section `
   }
 }
 
+  @media(max-width: 452px) {
+    img {
+      background:#9BD8F3;
+      width : 30vh;
+      height: 30vh;
+      
+  }
+}
+
 ` 
 
 export const Card = styled.div`
@@ -117,6 +137,12 @@ export const Connect = styled(motion.div) `
   margin-left: 100px;
   @media(max-width: 700px) {
       align-items: center;
+      min-height: 100vh;
+      width: 100vh;
+     
+    }
+  @media(max-width: 452px) {
+         
       min-height: 100vh;
       width: 100vh;
      

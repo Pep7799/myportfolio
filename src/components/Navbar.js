@@ -84,6 +84,13 @@ const Nav = styled.nav `
 
     }
 
+    @media screen and (max-width:452px) {
+            max-width: 100%;
+            overflow: hidden;
+            margin-right:15px;
+            
+    }
+
     @media screen and (max-width:600px) {
  
             .navbar {
@@ -105,7 +112,7 @@ const Nav = styled.nav `
                 flex-direction: column;
                 background-color: black;
                 width: 50%;
-                height: 90%;
+                height: 100%;
                 z-index: 999;
                 text-align: center;
                 transition: 0.3s;
