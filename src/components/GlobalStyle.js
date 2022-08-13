@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        overflow-x: hidden;
+        }
+
     body {
         background: #9BD8F3;
         font-family: 'Raleway', sans-serif;        

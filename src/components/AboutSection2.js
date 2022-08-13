@@ -96,6 +96,11 @@ const Para = styled.p`
     margin-top:70px;
     margin-bottom:10px;
 
+     
+  @media(max-width: 452px){
+    text-align: left;
+  }
+
   
 `
 
