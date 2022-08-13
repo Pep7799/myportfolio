@@ -131,7 +131,17 @@ export const Card = styled.div`
       margin-bottom: 30px ;
     }
  
-
+@media(max-width: 452px){
+  
+  p {
+      margin-top: 5px;
+      padding-left: 60px;
+      width: 300px ;
+      font-size: 17px;
+      margin-bottom: 30px ;
+    }
+ 
+}
     
 
 ` 
