@@ -64,17 +64,15 @@ const About2 = styled(About1)`
   display: flex;
   justify-content: space-between;
   margin-right:90px;
-  height: 130vh ;
+  height: 89vh ;
   width: 90vh;
 
  
 
   @media(max-width: 452px){
     height: 100vh ;
+    
 
-    .imglap {
-    opacity: 0;
-  }
   }
 
  
@@ -95,11 +93,7 @@ const Para = styled.p`
     font-weight: bold;
     margin-top:70px;
     margin-bottom:10px;
-
-     
-  @media(max-width: 452px){
-    text-align: left;
-  }
+  
 
   
 `
@@ -110,7 +104,7 @@ const All = styled.div `
     flex-wrap: wrap;
    
   @media(max-width: 452px){
-    width: 50%;
+    width: 25%;
   }
 
 ` 

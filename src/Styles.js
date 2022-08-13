@@ -5,7 +5,8 @@ import {motion} from 'framer-motion'
 
 
 export const About1 = styled(motion.section) `
-  min-height: 90vh;
+  min-height: 55vh;
+ 
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -14,24 +15,26 @@ export const About1 = styled(motion.section) `
   min-width: 94%;
   padding-left: 30px ;
   overflow: hidden;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
+  
   h1 {
     
     font-size: 40px;
     color: black;
-    width: 280px ;
-    height: 18vh ;
+    width: 250px ;
+    height: 16vh ;
+    
   }
 
   @media(max-width: 700px) {
-    min-height: 105vh;
+    min-height: 90vh;
     display: block;    
     width: 70vh;
     h1 {
+      text-align: center;
     
-    text-align: center;
     width: 100%;
   }
 
@@ -44,8 +47,7 @@ export const About1 = styled(motion.section) `
     width: 30vh;
   }
   h1 {
-    
-    text-align: center;
+  
     width: 100%;
   }
 
@@ -137,16 +139,11 @@ export const Connect = styled(motion.div) `
   margin-left: 100px;
   @media(max-width: 700px) {
       align-items: center;
-      min-height: 100vh;
+      height: 95vh;
       width: 100vh;
      
     }
-  @media(max-width: 452px) {
-         
-      min-height: 100vh;
-      width: 100vh;
-     
-    }
+  
 
 
   img {
@@ -155,6 +152,21 @@ export const Connect = styled(motion.div) `
       background-blend-mode: multiply ;
     }
 
+    @media(max-width: 452px) {
+        
+         min-height: 50vh;
+         width: 100vh;
+         margin-left: 50px;
+        
+
+         img {
+        width: 40px ;
+      height: 60px ;
+      background-blend-mode: multiply ;
+    }
+
+        
+       }
    
 
     
