@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { pageAnimation, aboutAnim } from '../animation'
+import { aboutAnim } from '../animation'
 import { motion } from 'framer-motion'
 import github from '../images/github.png'
 import email from '../images/email.jpg'
@@ -15,7 +15,7 @@ const Contacts = () => {
       </div>
       
     <div className='contactform'>
-      <form className='formpart' target='_blank' action="https://formspree.io/f/xwkzklre"
+      <form className='formpart' rel="noreferrer" target='_blank' action="https://formspree.io/f/xwkzklre"
          method="POST">
         <input name="email" type="email" className='emailpart emailinput' placeholder='Your email' />
         <textarea name="message" type= 'text' placeholder='Your message' className='emailpart textpart' id="">
@@ -31,13 +31,13 @@ const Contacts = () => {
 
 
       <div className='contacticons'>
-      <a href="https://github.com/Pep7799" target = '_blank'>
+      <a href="https://github.com/Pep7799" rel="noopener noreferrer" target = '_blank'>
         <img className='icon' src={github} width = '40' height= '40' alt="" />
       </a>
-      <a href="https://twitter.com/SuperGirl_P" target = '_blank'>
+      <a href="https://twitter.com/SuperGirl_P" rel="noreferrer" target = '_blank'>
         <img className='icon' src={twitter} width = '30' height= '30' alt="" />
       </a>
-      <a href="https://www.linkedin.com/in/oluwa-pelumi/" target = '_blank'>
+      <a href="https://www.linkedin.com/in/oluwa-pelumi/" rel="noreferrer" target = '_blank'>
         <img className='icon' src={linkedin} width = '30' height= '30' alt="" />
       </a>
       <div className='emailclass'>
@@ -105,14 +105,15 @@ const ContactContainer = styled(motion.div)`
     width: 100%;
     text-align: center;
     padding: 17px 35px;
-    background-color: #000;
+    background-color: #9BD8F3;
     border-radius: 35px;
   }
 
   .contactsubmit:hover {
-    color: #000;
-    background: #9BD8F3;
+    color: #9BD8F3;
+    background: #000;
     cursor: pointer;
+    border-radius: 90px;
   }
 
   .contacticons {
@@ -177,7 +178,7 @@ const ContactContainer = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 10px;
     
   }
 

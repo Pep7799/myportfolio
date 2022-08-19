@@ -9,13 +9,10 @@ import {Card} from '../Styles'
 import { Connect } from '../Styles'
 import Toggle from './Toggle'
 import { AnimateSharedLayout } from 'framer-motion'
-import useScroll from './useScroll'
-import { scrollAnim } from '../animation'
 import ScrollTop from './ScrollTop'
 
 
 const TechnicalSkills = () => {
-  const [element, controls] = useScroll()
   
   return (
     <Connect2 >
@@ -56,7 +53,7 @@ const TechnicalSkills = () => {
      
       </div>
       <div>            
-        <p>Elements, Atttributes, Formmatting and Styles,Colors, Logic, Forms, Graphics, Media, APIs</p>
+        <p>Selectors, Display, Grid, Flex, Transforms, Animations, Transitions, Media queries, Viewport</p>
       </div>
       </Toggle>
      
@@ -68,7 +65,7 @@ const TechnicalSkills = () => {
          <img src={js} alt="" />         
       </div>
       <div>
-           <p>Elements, Atttributes, Formmatting and Styles,Colors, Logic, Forms, Graphics, Media, APIs</p>
+           <p>Objects, Arrays, Functions, Events, Loops, Conditional statements, Maps, ES6, DOM, APIs</p>
       </div>
       </Toggle>
     </Card2>
@@ -79,7 +76,7 @@ const TechnicalSkills = () => {
          <img src={react} alt="" />         
           </div>
           <div>
-           <p>Elements, Atttributes, Formmatting and Styles,Colors, Logic, Forms, Graphics, Media, APIs</p>
+           <p>Components, Props, Events, Hooks, React Router, React Location, </p>
            </div>
       </Toggle>
     </Card2>

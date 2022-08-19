@@ -29,38 +29,17 @@ const Projects = () => {
           <motion.div variants={picAnim} className='line'></motion.div>
           <IMG >
           <Hide>
-          <motion.img variants = {picAnim} src={ecommerce} width = "100%" alt="" />
+          <motion.img variants = {picAnim} src={ecommerce} width = "100%" alt="perfumeapp" />
           </Hide>
           </IMG>
          
 
           <Buttons2>
             <button>
-            <a href="" target= "_blank">Github link</a>
+            <a href="https://github.com/Pep7799/ecommercep" rel="noopener noreferrer" target= "_blank">View code</a>
             </button>
             <button>
-            <a href="https://ecommercep.vercel.app/" target= "_blank">Preview</a>
-            </button>
-          </Buttons2>
-        </Container>
-
-        <Container variants = {scrollAnim} animate = {controls} initial = 'hidden' ref = {element}>
-          <h2>Weather APP</h2>
-          <p variants={aboutAnim}>A weather app created with React, weather API and Tailwind CSS for styling</p>
-          <motion.div variants={picAnim} className='line'></motion.div>
-          <IMG >
-          <Hide>
-          <img src={weatherdes} width = "100%" alt="" />
-          </Hide>
-          </IMG>
-         
-
-          <Buttons2>
-            <button>
-            <a href="" target= "_blank">Github link</a>
-            </button>
-            <button>
-            <a href="https://wea-app.vercel.app/" target= "_blank">Preview</a>
+            <a href="https://ecommercep.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
             </button>
           </Buttons2>
         </Container>
@@ -71,34 +50,58 @@ const Projects = () => {
           <p>A music app created with React, SCSS, </p>
           <motion.div className='line'></motion.div>
           <IMG >
-          <img src={ml} width = "100%" alt="" />
+          <img src={ml} width = "100%" alt="musicapp" />
           </IMG>
 
           <Buttons2>
             <button>
-            <a href="" target= "_blank">Github link</a>
+            <a href="https://github.com/Pep7799/MusicPlayer" rel="noopener noreferrer" target= "_blank">View code</a>
             </button>
             <button>
-            <a href="https://musicp.vercel.app/" target= "_blank">Preview</a>
+            <a href="https://musicp.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
             </button>
           </Buttons2>
         </Container>
 
+
+        <Container variants = {scrollAnim} animate = {controls} initial = 'hidden' ref = {element}>
+          <h2>Weather APP</h2>
+          <p variants={aboutAnim}>A weather app created with React, weather API and Tailwind CSS for styling</p>
+          <motion.div variants={picAnim} className='line'></motion.div>
+          <IMG >
+          <Hide>
+          <img src={weatherdes} width = "100%" alt="weatherapp" />
+          </Hide>
+          </IMG>
+         
+
+          <Buttons2>
+            <button>
+            <a href="https://github.com/Pep7799/weatherApp" rel="noopener noreferrer" target= "_blank">View code</a>
+            </button>
+            <button>
+            <a href="https://wea-app.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
+            </button>
+          </Buttons2>
+        </Container>
+
+
+        
 
         <Container variants = {scrollAnim} animate = {controls3} initial = 'hidden' ref = {element3}>
           <h2>Quiz APP</h2>
           <p>A collaborated quiz app created with React, React Router and Tailwind CSS for styling</p>
           <motion.div className='line'></motion.div>
           <IMG >
-          <img src={quizl} width = "100%" alt="" />
+          <img src={quizl} width = "100%" alt="quizapp" />
           </IMG>
 
           <Buttons2>
             <button>
-            <a href="" target= "_blank">Github link</a>
+            <a href="https://github.com/Pep7799/quiza" rel="noopener noreferrer" target= "_blank">View code</a>
             </button>
             <button>
-            <a href="https://quiza.vercel.app/" target= "_blank">Preview</a>
+            <a href="https://quiza.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
             </button>
           </Buttons2>
         </Container>

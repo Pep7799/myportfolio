@@ -13,7 +13,7 @@ const AboutSection1 = () => {
     <About1>
       <motion.div className='app'>
         <motion.h1 variants={aboutAnim}> <Name2>Hi!</Name2> <br /> I am Pep!</motion.h1> 
-        <Intro variants={aboutAnim}>I'm a zealous web developer always ready to learn and grow</Intro>
+        <Intro variants={aboutAnim}>I'm a Web developer passionate about new technologies and implementing them</Intro>
         <Buttons variants={btnAnim}>
           <a href="https://twitter.com/SuperGirl_P" target = '_blank'>
         <button>Contact Me</button>
