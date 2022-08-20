@@ -25,7 +25,7 @@ const Projects = () => {
 
       <Container>
           <motion.h2 variants = {aboutAnim} >Ecommmerce App</motion.h2>
-          <motion.p variants={aboutAnim}>A perfume ecommerce app with React and CSS</motion.p>
+          <motion.p variants={aboutAnim}>A perfume ecommerce app with React, react icons, Link and CSS for styling.</motion.p>
           <motion.div variants={picAnim} className='line'></motion.div>
           <IMG >
           <Hide>
@@ -47,7 +47,7 @@ const Projects = () => {
 
         <Container variants = {scrollAnim} animate = {controls2} initial = 'hidden' ref = {element2}>
           <h2>Beats loaded</h2>
-          <p>A music app created with React, SCSS, </p>
+          <p>A music app created with React, SCSS and fontawesome icons</p>
           <motion.div className='line'></motion.div>
           <IMG >
           <img src={ml} width = "100%" alt="musicapp" />

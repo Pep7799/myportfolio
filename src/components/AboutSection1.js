@@ -4,6 +4,8 @@ import {About1, Name2, Intro, Image1, Buttons} from '../Styles'
 import {motion} from "framer-motion"
 import { aboutAnim, btnAnim, picAnim } from '../animation';
 import ScrollTop from './ScrollTop';
+import resume from '../file/FolamiPCV.pdf'
+
 
 
 const AboutSection1 = () => {
@@ -16,9 +18,11 @@ const AboutSection1 = () => {
         <Intro variants={aboutAnim}>I'm a Web developer passionate about new technologies and implementing them</Intro>
         <Buttons variants={btnAnim}>
           <a href="https://twitter.com/SuperGirl_P" target = '_blank'>
-        <button>Contact Me</button>
-        </a>
-        <button>Download CV</button>
+            <button>Contact Me</button>
+          </a>
+          <a href={resume} proposed_file_name="Folami_Pelumi" download="Folami_Pelumi"> 
+            <button>Download CV</button>
+          </a>
         </Buttons>
         </motion.div>
         <div>
