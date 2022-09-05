@@ -36,7 +36,7 @@ const Projects = () => {
 
           <Buttons2>
             <button>
-            <a href="https://github.com/Pep7799/ecommercep" rel="noopener noreferrer" target= "_blank">View code</a>
+            <a href="https://github.com/Pep7799/markdownapp" rel="noopener noreferrer" target= "_blank">View code</a>
             </button>
             <button>
             <a href="https://markdown2.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
