@@ -6,7 +6,7 @@ import ml from '../images/ml.png'
 import quizl from '../images/quizl.png'
 import { aboutAnim, picAnim, slideAnim  } from '../animation'
 import {motion} from 'framer-motion'
-import ecommerce from '../images/ecommerce.png'
+import markdown from '../images/makdown.png'
 import useScroll from './useScroll'
 import { scrollAnim } from '../animation'
 import ScrollTop from './ScrollTop'
@@ -24,12 +24,12 @@ const Projects = () => {
 
 
       <Container>
-          <motion.h2 variants = {aboutAnim} >Ecommmerce App</motion.h2>
-          <motion.p variants={aboutAnim}>A perfume ecommerce app with React, react icons, Link and CSS for styling.</motion.p>
+          <motion.h2 variants = {aboutAnim} >Markdown app</motion.h2>
+          <motion.p variants={aboutAnim}>A markdown preview app made with React, Firebase Authentication, CSS for styling an context API</motion.p>
           <motion.div variants={picAnim} className='line'></motion.div>
           <IMG >
           <Hide>
-          <motion.img variants = {picAnim} src={ecommerce} width = "100%" alt="perfumeapp" />
+          <motion.img variants = {picAnim} src={markdown} width = "100%" alt="perfumeapp" />
           </Hide>
           </IMG>
          
@@ -39,7 +39,7 @@ const Projects = () => {
             <a href="https://github.com/Pep7799/ecommercep" rel="noopener noreferrer" target= "_blank">View code</a>
             </button>
             <button>
-            <a href="https://ecommercep.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
+            <a href="https://markdown2.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
             </button>
           </Buttons2>
         </Container>
