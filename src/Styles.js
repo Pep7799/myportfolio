@@ -17,11 +17,11 @@ export const About1 = styled(motion.section) `
   overflow: hidden;
   margin-bottom: 10px;
   margin-top: 10px;
-/*
+
   .app {
     margin-right: 10px;
     width: 80%;
-  }*/
+  }
   
   h1 {
     
@@ -40,14 +40,15 @@ export const About1 = styled(motion.section) `
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    min-height: 35vh;
+    min-height: 30vh;
     width: 10vh;
     h1 {
-      font-size: 25px;
+      font-size: 30px;
       color: black;
       width: 150px ;
       height: 20vh ;
       text-align: center;
+      margin-left: 50px;
 
   
       
@@ -68,13 +69,13 @@ export const Intro = styled(motion.div) `
   font-size: 20px ;
 
   @media screen and (max-width: 700px) {
-    font-size: 16px ;
+    font-size: 18px ;
     width: 100%;
     text-align: left;
     
   }
   @media screen and (max-width: 500px) {
-    font-size: 13px ;
+    font-size: 16px ;
     width: 80%;
     text-align: center;
     
@@ -85,7 +86,6 @@ export const Intro = styled(motion.div) `
 `
 
 export const Image1 = styled.section `
-  margin-bottom: 10px;
   margin-top: 30px;
   overflow: hidden;
 
@@ -163,15 +163,15 @@ export const Connect = styled(motion.div) `
       align-items: center;
       height: 95vh;
       width: 100vh;
-      
-  img {
+ 
+     
+    }
+       
+    img {
     width: 60px ;
   height: 80px ;
   background-blend-mode: multiply ;
 }
-     
-    }
-  
 
 
 
