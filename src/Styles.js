@@ -18,6 +18,10 @@ export const About1 = styled(motion.section) `
   margin-bottom: 10px;
   margin-top: 10px;
 
+  .app {
+    margin-right: 10px;
+    width: 50%;
+  }
   
   h1 {
     
@@ -81,7 +85,7 @@ export const Image1 = styled.section `
 
   img {
   background:#9BD8F3;
-  width : 100%;
+  width : 90%;
   height: 80vh;
   }
   @media(max-width: 700px) {

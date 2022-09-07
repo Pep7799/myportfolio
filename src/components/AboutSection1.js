@@ -15,10 +15,10 @@ const AboutSection1 = () => {
     <About1>
       <motion.div className='app'>
         <motion.h1 variants={aboutAnim}> <Name2>Hi!</Name2> <br /> I am Pep!</motion.h1> 
-        <Intro variants={aboutAnim}>I'm a Web developer passionate about new technologies and implementing them</Intro>
+        <Intro variants={aboutAnim}>I'm a passionate <br /> software developer <br /> and technical writer.</Intro>
         <Buttons variants={btnAnim}>
-          <a href="https://twitter.com/SuperGirl_P" target = '_blank'>
-            <button>Contact Me</button>
+          <a href="https://supergirlp.hashnode.dev/" target = '_blank'>
+            <button>Visit my blog page</button>
           </a>
           <a href={resume} proposed_file_name="Folami_Pelumi" download="Folami_Pelumi"> 
             <button>Download CV</button>
@@ -27,7 +27,7 @@ const AboutSection1 = () => {
         </motion.div>
         <div>
         <Image1>
-            <motion.img variants={picAnim} src={picone} width = "640" height="600" alt="cartoon me" />
+            <motion.img variants={picAnim} src={picone} width = "340" height="600" alt="cartoon me" />
         </Image1>
         </div>
         <ScrollTop/>
