@@ -17,42 +17,41 @@ export const About1 = styled(motion.section) `
   overflow: hidden;
   margin-bottom: 10px;
   margin-top: 10px;
-
+/*
   .app {
     margin-right: 10px;
-    width: 50%;
-  }
+    width: 80%;
+  }*/
   
   h1 {
     
     font-size: 40px;
     color: black;
     width: 250px ;
-    height: 16vh ;
+    height: 25vh ;
     
   }
 
-  @media(max-width: 700px) {
-    min-height: 90vh;
-    display: block;    
-    width: 70vh;
+  @media screen and (max-width: 700px) {
+ 
+}
+ 
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    width: 10vh;
     h1 {
+      font-size: 25px;
+      color: black;
+      width: 150px ;
+      height: 20vh ;
       text-align: center;
-    
-    width: 100%;
-  }
 
   
       
   }
-
-  @media screen and (max-width:452px) {
-    min-height:30vh;
-    width: 30vh;
-  }
-  h1 {
-  
-    width: 100%;
   }
 
  
@@ -68,10 +67,17 @@ export const Intro = styled(motion.div) `
   letter-spacing: 2px ;
   font-size: 20px ;
 
-  @media(max-width: 700px) {
+  @media screen and (max-width: 700px) {
     font-size: 16px ;
     width: 100%;
+    text-align: left;
+    
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 13px ;
+    width: 80%;
     text-align: center;
+    
   }
 
  
@@ -100,10 +106,10 @@ export const Image1 = styled.section `
   @media(max-width: 452px) {
     img {
       background:#9BD8F3;
-      width : 30vh;
-      height: 30vh;
-      text-align:center;
-      margin-left: 20px;
+      width : 40vh;
+      height: 50vh;
+      text-align:left;
+      margin-left: 0px;
       
   }
 }
@@ -208,9 +214,35 @@ export const Buttons = styled(motion.div) `
   }
 }
 
-      @media(max-width: 700px) {
-            text-align: center;
+      @media screen and (max-width: 700px) {
+            text-align: left;
+            button {
+              font-size: 14px ;
+              padding: 8px 6px ; 
+              cursor: pointer;
+              color: white;
+              background: black;
+              margin: 30px 8px 0 0;
+              font-weight: bold;
+              text-decoration: none;
+          
+            }
           }
+      @media screen and (max-width: 452px) {
+        text-align: left;
+        margin-left: 0px;
+        button {
+          font-size: 10px ;
+          padding: 5px 8px ; 
+          cursor: pointer;
+          color: white;
+          background: black;
+          margin: 10px 0 0 0;
+          font-weight: bold;
+          text-decoration: none;
+     
+          }
+        }
 
   
 

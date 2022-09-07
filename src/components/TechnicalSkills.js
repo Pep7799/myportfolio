@@ -119,7 +119,7 @@ const Connect2 = styled(Connect)`
 
 @media(max-width: 452px) {
   margin-left: 5px;
-  width: 150vw;
+  width: auto;
 }
 `
 const Card2 = styled(Card)`

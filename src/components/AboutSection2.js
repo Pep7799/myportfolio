@@ -64,13 +64,19 @@ const About2 = styled(About1)`
   display: flex;
   justify-content: space-between;
   margin-right:90px;
-  height: 89vh ;
+  height: 95vh ;
   width: 90vh;
 
  
 
+  @media screen and (max-width: 700px){
+    height: 120vh ;
+    
+
+  }
+
   @media(max-width: 452px){
-    height: 100vh ;
+    height: 120vh ;
     
 
   }

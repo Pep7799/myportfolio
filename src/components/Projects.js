@@ -160,11 +160,11 @@ const Buttons2 = styled(Buttons) `
       }
     }
   
-    @media(max-width: 452px){
+    @media screen and (max-width: 452px){
       button {
       margin-left: 10px;
       margin-right: 20px;
-      font-size: 16px ;
+      font-size: 8px ;
       padding: 6px 7px ;
       
       }

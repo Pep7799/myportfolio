@@ -24,12 +24,12 @@ const AboutSection1 = () => {
             <button>Download CV</button>
           </a>
         </Buttons>
-        </motion.div>
-        <div>
+      </motion.div>
+      <div>
         <Image1>
             <motion.img variants={picAnim} src={picone} width = "340" height="600" alt="cartoon me" />
         </Image1>
-        </div>
+      </div>
         <ScrollTop/>
     </About1>
   )
