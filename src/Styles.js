@@ -159,31 +159,30 @@ export const Card = styled.div`
 
 export const Connect = styled(motion.div) `
   margin-left: 100px;
-  @media(max-width: 700px) {
+  @media screen and (max-width: 700px) {
       align-items: center;
       height: 95vh;
       width: 100vh;
+      
+  img {
+    width: 60px ;
+  height: 80px ;
+  background-blend-mode: multiply ;
+}
      
     }
   
 
 
-  img {
-        width: 60px ;
-      height: 80px ;
-      background-blend-mode: multiply ;
-    }
 
-    @media(max-width: 452px) {
+    @media screen and (max-width: 500px) {
         
-         min-height: 50vh;
-         width: 150vh;
-         margin-left: 3px;
+         height: 100%;
         
 
          img {
         width: 40px ;
-      height: 60px ;
+      height: 40px ;
       background-blend-mode: multiply ;
     }
 

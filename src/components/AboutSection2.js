@@ -69,18 +69,6 @@ const About2 = styled(About1)`
 
  
 
-  @media screen and (max-width: 700px){
-    height: 120vh ;
-    
-
-  }
-
-  @media(max-width: 452px){
-    height: 120vh ;
-    
-
-  }
-
  
   img {
     object-fit: contain;
