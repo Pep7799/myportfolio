@@ -40,7 +40,7 @@ export const About1 = styled(motion.section) `
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    min-height: 30vh;
+   height: 100vh;
     width: 10vh;
     h1 {
       font-size: 30px;
@@ -48,7 +48,7 @@ export const About1 = styled(motion.section) `
       width: 150px ;
       height: 20vh ;
       text-align: center;
-      margin-left: 50px;
+      margin-left: 10px;
 
   
       
@@ -91,7 +91,7 @@ export const Image1 = styled.section `
 
   img {
   background:#9BD8F3;
-  width : 90%;
+  width : 80%;
   height: 80vh;
   }
   @media(max-width: 700px) {
