@@ -40,7 +40,7 @@ export const About1 = styled(motion.section) `
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    min-height: 45vh;
+    min-height: 35vh;
     width: 10vh;
     h1 {
       font-size: 25px;
