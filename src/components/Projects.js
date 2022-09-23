@@ -10,6 +10,7 @@ import markdown from '../images/makdown.png'
 import useScroll from './useScroll'
 import { scrollAnim } from '../animation'
 import ScrollTop from './ScrollTop'
+import blogt from '../images/blogt.png'
 
 
 
@@ -17,6 +18,7 @@ const Projects = () => {
   const [element, controls] = useScroll()
   const [element2, controls2] = useScroll()
   const [element3, controls3] = useScroll()
+  const [element4, controls4] = useScroll()
   return (
     <div>
       <Frame1 variants ={slideAnim}></Frame1>
@@ -46,6 +48,24 @@ const Projects = () => {
 
 
         <Container variants = {scrollAnim} animate = {controls2} initial = 'hidden' ref = {element2}>
+          <h2>Blogging app</h2>
+          <p>A blogging web app made with React, sanity CMS for backend and CSS for styling</p>
+          <motion.div className='line'></motion.div>
+          <IMG >
+          <img src={blogt} width = "100%" alt="blogapp" />
+          </IMG>
+
+          <Buttons2>
+            <button>
+            <a href="https://github.com/Pep7799/Tblog" rel="noopener noreferrer" target= "_blank">View code</a>
+            </button>
+            <button>
+            <a href="https://tosinblog.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
+            </button>
+          </Buttons2>
+        </Container>
+
+        <Container variants = {scrollAnim} animate = {controls4} initial = 'hidden' ref = {element4}>
           <h2>Beats loaded</h2>
           <p>A music app created with React, SCSS and fontawesome icons</p>
           <motion.div className='line'></motion.div>
@@ -145,32 +165,22 @@ const IMG = styled.div `
 `
 
 const Buttons2 = styled(Buttons) `
-  
+ 
     align-items: center;
     display: flex;
     justify-content: center ;
 
-    button {
-      margin-right: 60px;
-      margin-left: 20px;
+   
 
       a {
         text-decoration: none;
         color: white;
       }
-    }
+    
   
-    @media screen and (max-width: 452px){
-      button {
-      margin-left: 10px;
-      margin-right: 20px;
-      font-size: 8px ;
-      padding: 6px 7px ;
-      
-      }
-    }
+    
 
-`
+`  
 const Hide = styled.div `
   overflow: hidden;
 `

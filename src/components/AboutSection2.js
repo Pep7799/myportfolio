@@ -59,14 +59,6 @@ const AboutSection2 = () => {
 }
 
 const About2 = styled(About1)`
-  padding-left:0px;
-  margin-left: 0px;
-  display: flex;
-  justify-content: space-between;
-  margin-right:90px;
-  height: 95vh ;
-  width: 90vh;
-
  
 
  
@@ -87,8 +79,11 @@ const Para = styled.p`
     font-weight: bold;
     margin-top:70px;
     margin-bottom:10px;
+    text-align: left;
   
-
+    @media(max-width: 500px){
+      margin-left: 20px;
+    }
   
 `
 
@@ -109,26 +104,19 @@ const Image2 = styled(Image1)`
     overflow: hidden;
 
   img {
-  background:#9BD8F3;
+  
   width : 100%;
   height: 80vh;
   opacity: 1;
   }
-  @media(max-width: 700px) {
+
+  @media(max-width: 900px) {
     img {
-      background:#9BD8F3;
-      width : 60vh;
-      height: 0vh;
+     
+      display: none;
     }
   }
-  @media(max-width: 452px) {
-    img {
-      background:none;
-      width : 60vh;
-      height: 0vh;
-      opacity:0;
-    }
-  }
+ 
 
 `
 

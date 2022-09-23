@@ -16,6 +16,7 @@ const AboutSection1 = () => {
       <motion.div className='app'>
         <motion.h1 variants={aboutAnim}> <Name2>Hi!</Name2> <br /> I am Pep!</motion.h1> 
         <Intro variants={aboutAnim}>I'm a passionate <br /> software developer <br /> and technical writer.</Intro>
+        <Intro variants={aboutAnim}>Eager to work with you <br /> and contribute massively to projects </Intro>
         <Buttons variants={btnAnim}>
           <a href="https://supergirlp.hashnode.dev/" target = '_blank'>
             <button>Visit my blog page</button>

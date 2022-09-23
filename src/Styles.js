@@ -5,18 +5,14 @@ import {motion} from 'framer-motion'
 
 
 export const About1 = styled(motion.section) `
-  min-height: 55vh;
- 
+  height: 90vh; 
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  width: 90vh;
   background: #9BD8F3;
-  min-width: 94%;
   padding-left: 30px ;
   overflow: hidden;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
 
   .app {
     margin-right: 10px;
@@ -25,36 +21,25 @@ export const About1 = styled(motion.section) `
   
   h1 {
     
-    font-size: 40px;
+    font-size: 60px;
     color: black;
-    width: 250px ;
-    height: 25vh ;
+    margin-bottom: 9px;
     
   }
-
-  @media screen and (max-width: 700px) {
- 
-}
- 
-
-  @media screen and (max-width: 600px) {
-    display: flex;
+  @media (max-width: 900px) {
     flex-direction: column;
-   height: 100vh;
-    width: 10vh;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+
     h1 {
-      font-size: 30px;
-      color: black;
-      width: 150px ;
-      height: 20vh ;
-      text-align: center;
-      margin-left: 10px;
-
-  
-      
+    
+    
+    text-align: center;
+    
   }
   }
-
  
 `
 
@@ -68,16 +53,10 @@ export const Intro = styled(motion.div) `
   letter-spacing: 2px ;
   font-size: 20px ;
 
-  @media screen and (max-width: 700px) {
-    font-size: 18px ;
-    width: 100%;
-    text-align: left;
-    
-  }
+  
   @media screen and (max-width: 500px) {
     font-size: 16px ;
-    width: 80%;
-    text-align: center;
+   
     
   }
 
@@ -140,20 +119,21 @@ export const Card = styled.div`
       font-size: 17px;
       margin-bottom: 30px ;
     }
+
+    
  
-@media(max-width: 452px){
+@media(max-width: 500px){
+  margin-left: 26px;
   
   p {
       margin-top: 5px;
       padding-left: 60px;
-      width: 300px ;
+      
       font-size: 17px;
       margin-bottom: 30px ;
     }
  
 }
-    
-
 ` 
 
 
@@ -196,13 +176,14 @@ export const Connect = styled(motion.div) `
 export const Buttons = styled(motion.div) `
   button {
     font-size: 14px ;
-    padding: 15px 13px ; 
+    padding: 12px 30px; 
     cursor: pointer;
     color: white;
     background: black;
     margin: 30px 8px 0 0;
     font-weight: bold;
     text-decoration: none;
+    border-radius: 24px 4px;
 
    
 
@@ -211,8 +192,25 @@ export const Buttons = styled(motion.div) `
       background: #9BD8F3;
 
   }
-}
 
+  @media (max-width:900px){
+    align-items:center;
+    justify-content:center;
+
+    button {
+              font-size: 12px ;
+              padding: 6px 4px ; 
+              cursor: pointer;
+              color: white;
+              background: black;
+              margin: 30px 8px 0 0;
+              font-weight: bold;
+              text-decoration: none;
+          
+            }
+  };
+}
+/*
       @media screen and (max-width: 700px) {
             text-align: left;
             button {
@@ -242,7 +240,7 @@ export const Buttons = styled(motion.div) `
      
           }
         }
-
+*/
   
 
   `
