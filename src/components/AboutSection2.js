@@ -81,8 +81,8 @@ const Para = styled.p`
     margin-bottom:10px;
     text-align: left;
   
-    @media(max-width: 500px){
-      margin-left: 20px;
+    @media(max-width: 452px){
+      width: 25%;
     }
   
 `

@@ -122,27 +122,28 @@ export const Card = styled.div`
 
     
  
-@media(max-width: 500px){
-  margin-left: 26px;
+@media(max-width: 452px){
   
   p {
       margin-top: 5px;
       padding-left: 60px;
-      
+      width: 300px ;
       font-size: 17px;
       margin-bottom: 30px ;
     }
  
 }
+    
+
 ` 
 
 
 export const Connect = styled(motion.div) `
-  margin-left: 100px;
+  margin-left: 30px;
   @media screen and (max-width: 700px) {
       align-items: center;
       height: 95vh;
-      width: 100vh;
+      width: 150%;
  
      
     }
@@ -185,6 +186,14 @@ export const Buttons = styled(motion.div) `
     text-decoration: none;
     border-radius: 24px 4px;
 
+    @media (max-width:900px){
+    align-items:center;
+    justify-content:center;
+
+  };
+
+  
+
    
 
   &:hover {
@@ -193,22 +202,7 @@ export const Buttons = styled(motion.div) `
 
   }
 
-  @media (max-width:900px){
-    align-items:center;
-    justify-content:center;
-
-    button {
-              font-size: 12px ;
-              padding: 6px 4px ; 
-              cursor: pointer;
-              color: white;
-              background: black;
-              margin: 30px 8px 0 0;
-              font-weight: bold;
-              text-decoration: none;
-          
-            }
-  };
+  
 }
 /*
       @media screen and (max-width: 700px) {

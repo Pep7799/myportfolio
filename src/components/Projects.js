@@ -177,6 +177,19 @@ const Buttons2 = styled(Buttons) `
         color: white;
       }
     
+      @media (max-width: 452px) {
+        
+        button {
+          font-size: 10px ;
+          padding: 6px 15px; 
+          cursor: pointer;
+          margin: 30px 8px 0 0;
+          font-weight: bold;
+          text-decoration: none;
+          border-radius: 12px 2px;
+     
+          }
+        }
   
     
 
