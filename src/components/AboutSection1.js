@@ -28,7 +28,7 @@ const AboutSection1 = () => {
       </motion.div>
       <div>
         <Image1>
-            <motion.img variants={picAnim} src={picone} width = "340" height="600" alt="cartoon me" />
+            <motion.img variants={picAnim} src={picone} alt="cartoon me" />
         </Image1>
       </div>
         <ScrollTop/>

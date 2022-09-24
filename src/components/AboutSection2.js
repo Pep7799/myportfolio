@@ -59,7 +59,7 @@ const AboutSection2 = () => {
 }
 
 const About2 = styled(About1)`
- 
+ text-align: left;
 
  
   img {
@@ -82,7 +82,7 @@ const Para = styled.p`
     text-align: left;
   
     @media(max-width: 452px){
-      width: 25%;
+      width: 50%;
     }
   
 `

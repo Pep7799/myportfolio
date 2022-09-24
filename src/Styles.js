@@ -30,7 +30,7 @@ export const About1 = styled(motion.section) `
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    text-align: center;
+    text-align: left;
     width: 100%;
 
     h1 {
@@ -126,11 +126,14 @@ export const Card = styled.div`
   
   p {
       margin-top: 5px;
-      padding-left: 60px;
-      width: 300px ;
+      padding-left: 0px;
+      width: 200px ;
       font-size: 17px;
       margin-bottom: 30px ;
+      text-align: left;
     }
+
+    
  
 }
     
@@ -144,6 +147,7 @@ export const Connect = styled(motion.div) `
       align-items: center;
       height: 95vh;
       width: 150%;
+      margin-left: 0px;
  
      
     }
