@@ -11,6 +11,7 @@ import useScroll from './useScroll'
 import { scrollAnim } from '../animation'
 import ScrollTop from './ScrollTop'
 import blogt from '../images/blogt.png'
+import crypto from '../images/crypto.png'
 
 
 
@@ -84,23 +85,24 @@ const Projects = () => {
         </Container>
 
 
+       
         <Container variants = {scrollAnim} animate = {controls} initial = 'hidden' ref = {element}>
-          <h2>Weather APP</h2>
-          <p variants={aboutAnim}>A weather app created with React, weather API and Tailwind CSS for styling</p>
+          <h2>Crypto APP</h2>
+          <p variants={aboutAnim}>A crypto app to monitor the current prices of crypto in dollar and naira</p>
           <motion.div variants={picAnim} className='line'></motion.div>
           <IMG >
           <Hide>
-          <img src={weatherdes} width = "100%" alt="weatherapp" />
+          <img src={crypto} width = "100%" alt="cryptoapp" />
           </Hide>
           </IMG>
          
 
           <Buttons2>
             <button>
-            <a href="https://github.com/Pep7799/weatherApp" rel="noopener noreferrer" target= "_blank">View code</a>
+            <a href="https://github.com/Pep7799/cryptoapp" rel="noopener noreferrer" target= "_blank">View code</a>
             </button>
             <button>
-            <a href="https://wea-app.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
+            <a href="https://cryptoappp.vercel.app/" rel="noopener noreferrer" target= "_blank">Preview</a>
             </button>
           </Buttons2>
         </Container>
